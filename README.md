@@ -85,12 +85,20 @@ Kullanım
 Segmentasyon Modeli:
 
 KMeans algoritması ile segmentasyon yapılır.
+
 Müşteri segmentleri şu şekilde adlandırılmaktadır:
+
 Yeni Müşteriler
+
 Sadık Müşteriler
+
 Potansiyel Churn
+
 Churn Müşteriler
+
 Potansiyel Müşteriler
+
+
 Modelin Kaydedilmesi:
 
 Uygulama, modelin başarısını değerlendirdikten sonra kmeans_model.pkl olarak kaydeder.
