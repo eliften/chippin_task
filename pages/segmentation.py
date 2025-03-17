@@ -40,4 +40,5 @@ def layout():
                     page_size=20,
                     export_format='xlsx',
                     style_cell={'textAlign': 'left', 'fontSize': '12px'},
+                    sort_action='native'
                 )]))])

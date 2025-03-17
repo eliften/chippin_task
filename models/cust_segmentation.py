@@ -28,7 +28,7 @@ def predict_data(data):
     logging.info("Starting model prediction process...")
     scaler = StandardScaler()
     try:
-        df = data.drop(columns=['cb_customer_id', 'first_transaction', 'last_transaction', 'total_spent'])
+        df = data.drop(columns=['first_transaction', 'last_transaction', 'total_spent'])
         df_scaled = scaler.fit_transform(df)
         logging.info("Data scaling completed.")
 

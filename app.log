@@ -331,3 +331,99 @@ dtype: int64
 2025-02-09 17:48:03 - INFO - cust_segmentation.py:41 - predict_data - Segmentation labels added to data.
 2025-02-09 17:48:03 - INFO - cust_segmentation.py:19 - save_model - Saving model to assets/kmeans_model.pkl...
 2025-02-09 17:48:03 - INFO - cust_segmentation.py:23 - save_model - Model saved successfully to assets/kmeans_model.pkl.
+2025-03-17 20:44:07 - INFO - middleware.py:12 - start_logging - Logging started.
+2025-03-17 20:44:07 - INFO - methods.py:16 - open_files_and_merge - CSV files found: ['cust_best_sample.csv', 'cust_sample.csv', 'trx_sample.csv']
+2025-03-17 20:44:07 - INFO - methods.py:24 - open_files_and_merge - Merging 'cust_best_sample' and 'cust_sample' on 'unique_customer_id'.
+2025-03-17 20:44:07 - INFO - methods.py:26 - open_files_and_merge - Merge completed: 'cust_best_sample' and 'cust_sample'.
+2025-03-17 20:44:07 - INFO - methods.py:33 - open_files_and_merge - Merging 'merged_cust' with 'trx_sample' on 'cb_customer_id'.
+2025-03-17 20:44:07 - INFO - methods.py:35 - open_files_and_merge - Merge completed: 'merged_cust' and 'trx_sample'.
+2025-03-17 20:44:07 - WARNING - methods.py:56 - find_missing_values - Missing values found in the following columns:
+2025-03-17 20:44:07 - WARNING - methods.py:57 - find_missing_values - gender           148768
+date_of_birth    150230
+dtype: int64
+2025-03-17 20:44:07 - INFO - methods.py:59 - find_missing_values - Columns with missing values have been dropped.
+2025-03-17 20:44:07 - INFO - methods.py:45 - remove_future_dates - Future dates removed from column 'transaction_date'. Rows removed: 0.
+2025-03-17 20:44:07 - INFO - methods.py:6 - time_series - Starting time series transformation...
+2025-03-17 20:44:07 - INFO - methods.py:9 - time_series - Transaction date converted to datetime.
+2025-03-17 20:44:07 - INFO - methods.py:17 - time_series - Time-based features added.
+2025-03-17 20:44:07 - INFO - methods.py:20 - time_series - Year column dropped.
+2025-03-17 20:44:07 - INFO - methods.py:28 - customer_anlys - Starting customer analysis...
+2025-03-17 20:44:07 - INFO - methods.py:37 - customer_anlys - Customer aggregation completed.
+2025-03-17 20:44:08 - INFO - methods.py:44 - customer_anlys - Customer features (lifetime and recency) calculated.
+2025-03-17 20:44:08 - INFO - methods.py:52 - branch_analys - Starting branch analysis...
+2025-03-17 20:44:08 - INFO - methods.py:60 - branch_analys - Branch aggregation completed.
+2025-03-17 20:44:18 - INFO - methods.py:16 - open_files_and_merge - CSV files found: ['cust_best_sample.csv', 'cust_sample.csv', 'trx_sample.csv']
+2025-03-17 20:44:18 - INFO - methods.py:24 - open_files_and_merge - Merging 'cust_best_sample' and 'cust_sample' on 'unique_customer_id'.
+2025-03-17 20:44:18 - INFO - methods.py:26 - open_files_and_merge - Merge completed: 'cust_best_sample' and 'cust_sample'.
+2025-03-17 20:44:18 - INFO - methods.py:33 - open_files_and_merge - Merging 'merged_cust' with 'trx_sample' on 'cb_customer_id'.
+2025-03-17 20:44:18 - INFO - methods.py:35 - open_files_and_merge - Merge completed: 'merged_cust' and 'trx_sample'.
+2025-03-17 20:44:18 - WARNING - methods.py:56 - find_missing_values - Missing values found in the following columns:
+2025-03-17 20:44:18 - WARNING - methods.py:57 - find_missing_values - gender           148768
+date_of_birth    150230
+dtype: int64
+2025-03-17 20:44:18 - INFO - methods.py:59 - find_missing_values - Columns with missing values have been dropped.
+2025-03-17 20:44:18 - INFO - methods.py:45 - remove_future_dates - Future dates removed from column 'transaction_date'. Rows removed: 0.
+2025-03-17 20:44:18 - INFO - methods.py:6 - time_series - Starting time series transformation...
+2025-03-17 20:44:18 - INFO - methods.py:9 - time_series - Transaction date converted to datetime.
+2025-03-17 20:44:18 - INFO - methods.py:17 - time_series - Time-based features added.
+2025-03-17 20:44:18 - INFO - methods.py:20 - time_series - Year column dropped.
+2025-03-17 20:44:18 - INFO - methods.py:28 - customer_anlys - Starting customer analysis...
+2025-03-17 20:44:18 - INFO - methods.py:37 - customer_anlys - Customer aggregation completed.
+2025-03-17 20:44:18 - INFO - methods.py:44 - customer_anlys - Customer features (lifetime and recency) calculated.
+2025-03-17 20:44:18 - INFO - methods.py:52 - branch_analys - Starting branch analysis...
+2025-03-17 20:44:18 - INFO - methods.py:60 - branch_analys - Branch aggregation completed.
+2025-03-17 20:44:18 - INFO - cust_segmentation.py:28 - predict_data - Starting model prediction process...
+2025-03-17 20:44:18 - INFO - cust_segmentation.py:33 - predict_data - Data scaling completed.
+2025-03-17 20:44:19 - INFO - cust_segmentation.py:38 - predict_data - KMeans clustering completed.
+2025-03-17 20:44:20 - INFO - cust_segmentation.py:41 - predict_data - Segmentation labels added to data.
+2025-03-17 20:44:20 - INFO - cust_segmentation.py:19 - save_model - Saving model to assets/kmeans_model.pkl...
+2025-03-17 20:44:20 - INFO - cust_segmentation.py:23 - save_model - Model saved successfully to assets/kmeans_model.pkl.
+2025-03-17 20:44:20 - INFO - dash.py:2160 - run - Dash is running on http://0.0.0.0:8050/
+
+2025-03-17 20:44:21 - INFO - middleware.py:12 - start_logging - Logging started.
+2025-03-17 20:44:21 - INFO - methods.py:16 - open_files_and_merge - CSV files found: ['cust_best_sample.csv', 'cust_sample.csv', 'trx_sample.csv']
+2025-03-17 20:44:21 - INFO - methods.py:24 - open_files_and_merge - Merging 'cust_best_sample' and 'cust_sample' on 'unique_customer_id'.
+2025-03-17 20:44:21 - INFO - methods.py:26 - open_files_and_merge - Merge completed: 'cust_best_sample' and 'cust_sample'.
+2025-03-17 20:44:21 - INFO - methods.py:33 - open_files_and_merge - Merging 'merged_cust' with 'trx_sample' on 'cb_customer_id'.
+2025-03-17 20:44:21 - INFO - methods.py:35 - open_files_and_merge - Merge completed: 'merged_cust' and 'trx_sample'.
+2025-03-17 20:44:21 - WARNING - methods.py:56 - find_missing_values - Missing values found in the following columns:
+2025-03-17 20:44:21 - WARNING - methods.py:57 - find_missing_values - gender           148768
+date_of_birth    150230
+dtype: int64
+2025-03-17 20:44:21 - INFO - methods.py:59 - find_missing_values - Columns with missing values have been dropped.
+2025-03-17 20:44:21 - INFO - methods.py:45 - remove_future_dates - Future dates removed from column 'transaction_date'. Rows removed: 0.
+2025-03-17 20:44:21 - INFO - methods.py:6 - time_series - Starting time series transformation...
+2025-03-17 20:44:21 - INFO - methods.py:9 - time_series - Transaction date converted to datetime.
+2025-03-17 20:44:21 - INFO - methods.py:17 - time_series - Time-based features added.
+2025-03-17 20:44:21 - INFO - methods.py:20 - time_series - Year column dropped.
+2025-03-17 20:44:21 - INFO - methods.py:28 - customer_anlys - Starting customer analysis...
+2025-03-17 20:44:21 - INFO - methods.py:37 - customer_anlys - Customer aggregation completed.
+2025-03-17 20:44:21 - INFO - methods.py:44 - customer_anlys - Customer features (lifetime and recency) calculated.
+2025-03-17 20:44:21 - INFO - methods.py:52 - branch_analys - Starting branch analysis...
+2025-03-17 20:44:21 - INFO - methods.py:60 - branch_analys - Branch aggregation completed.
+2025-03-17 20:44:22 - INFO - methods.py:16 - open_files_and_merge - CSV files found: ['cust_best_sample.csv', 'cust_sample.csv', 'trx_sample.csv']
+2025-03-17 20:44:22 - INFO - methods.py:24 - open_files_and_merge - Merging 'cust_best_sample' and 'cust_sample' on 'unique_customer_id'.
+2025-03-17 20:44:22 - INFO - methods.py:26 - open_files_and_merge - Merge completed: 'cust_best_sample' and 'cust_sample'.
+2025-03-17 20:44:22 - INFO - methods.py:33 - open_files_and_merge - Merging 'merged_cust' with 'trx_sample' on 'cb_customer_id'.
+2025-03-17 20:44:22 - INFO - methods.py:35 - open_files_and_merge - Merge completed: 'merged_cust' and 'trx_sample'.
+2025-03-17 20:44:22 - WARNING - methods.py:56 - find_missing_values - Missing values found in the following columns:
+2025-03-17 20:44:22 - WARNING - methods.py:57 - find_missing_values - gender           148768
+date_of_birth    150230
+dtype: int64
+2025-03-17 20:44:22 - INFO - methods.py:59 - find_missing_values - Columns with missing values have been dropped.
+2025-03-17 20:44:22 - INFO - methods.py:45 - remove_future_dates - Future dates removed from column 'transaction_date'. Rows removed: 0.
+2025-03-17 20:44:22 - INFO - methods.py:6 - time_series - Starting time series transformation...
+2025-03-17 20:44:22 - INFO - methods.py:9 - time_series - Transaction date converted to datetime.
+2025-03-17 20:44:22 - INFO - methods.py:17 - time_series - Time-based features added.
+2025-03-17 20:44:22 - INFO - methods.py:20 - time_series - Year column dropped.
+2025-03-17 20:44:22 - INFO - methods.py:28 - customer_anlys - Starting customer analysis...
+2025-03-17 20:44:22 - INFO - methods.py:37 - customer_anlys - Customer aggregation completed.
+2025-03-17 20:44:22 - INFO - methods.py:44 - customer_anlys - Customer features (lifetime and recency) calculated.
+2025-03-17 20:44:22 - INFO - methods.py:52 - branch_analys - Starting branch analysis...
+2025-03-17 20:44:22 - INFO - methods.py:60 - branch_analys - Branch aggregation completed.
+2025-03-17 20:44:22 - INFO - cust_segmentation.py:28 - predict_data - Starting model prediction process...
+2025-03-17 20:44:22 - INFO - cust_segmentation.py:33 - predict_data - Data scaling completed.
+2025-03-17 20:44:23 - INFO - cust_segmentation.py:38 - predict_data - KMeans clustering completed.
+2025-03-17 20:44:23 - INFO - cust_segmentation.py:41 - predict_data - Segmentation labels added to data.
+2025-03-17 20:44:23 - INFO - cust_segmentation.py:19 - save_model - Saving model to assets/kmeans_model.pkl...
+2025-03-17 20:44:23 - INFO - cust_segmentation.py:23 - save_model - Model saved successfully to assets/kmeans_model.pkl.
