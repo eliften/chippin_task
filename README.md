@@ -37,7 +37,7 @@ Docker imajını oluşturun: Proje klasöründe Dockerfile ve gerekli diğer dos
 
 Docker konteynerini çalıştırın: Docker imajını oluşturduktan sonra, konteyneri çalıştırmak için şu komutu kullanın:
 
-"docker run -p 5000:5000 customer-segmentation"
+"docker run -p 8050:8050 customer-segmentation"
 
 Bu komut, uygulamanın Docker konteynerinde çalışmasını sağlar ve uygulama http://localhost:8050 adresinde erişilebilir olacaktır.
 
